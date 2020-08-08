@@ -6,16 +6,21 @@ import Portal from "./components/Portales";
 import UseState from "./components/hooks/UseState-1";
 import UseState2 from "./components/hooks/UseState-2";
 import  Desmontado from "./components/hooks/CicloDeVida";
+import ParentComponents from "./components/comunicacion/ParentComponents";
+import RenderProp from "./components/comunicacion/RenderProp";
 
 
 ReactDOM.render(
   <React.StrictMode>
-   <Portal />
+ {/*   <Portal />
    <UseState/>
 
    <UseState2 />
 
-   < Desmontado/>
+   < Desmontado/> */}
+
+   <ParentComponents/>
+   <RenderProp/>
   </React.StrictMode>,
   document.getElementById("root")
 );
