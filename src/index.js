@@ -9,6 +9,11 @@ import  Desmontado from "./components/hooks/CicloDeVida";
 import ParentComponents from "./components/comunicacion/ParentComponents";
 import RenderProp from "./components/comunicacion/RenderProp";
 
+import Hoc from './components/comunicacion/Hoc'
+import InputNoControladosRef from "./components/formulario/InputNoControladosRef";
+import InputNoControladoForm from "./components/formulario/InputNoControladoForm";
+import InputControlado from "./components/formulario/InputControlado";
+import InputCpntrolado2 from "./components/formulario/InputControlado-2";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,8 +24,15 @@ ReactDOM.render(
 
    < Desmontado/> */}
 
-   <ParentComponents/>
-   <RenderProp/>
+  {/*  <ParentComponents/>
+   <RenderProp/> */}
+   <Hoc/>
+   <InputNoControladosRef/>
+
+   <InputNoControladoForm/>
+   <InputControlado/>
+
+   <InputCpntrolado2/>
   </React.StrictMode>,
   document.getElementById("root")
 );
