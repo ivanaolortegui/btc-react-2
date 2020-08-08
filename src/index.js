@@ -5,6 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import Portal from "./components/Portales";
 import UseState from "./components/hooks/UseState-1";
 import UseState2 from "./components/hooks/UseState-2";
+import  Desmontado from "./components/hooks/CicloDeVida";
 
 
 ReactDOM.render(
@@ -13,6 +14,8 @@ ReactDOM.render(
    <UseState/>
 
    <UseState2 />
+
+   < Desmontado/>
   </React.StrictMode>,
   document.getElementById("root")
 );
