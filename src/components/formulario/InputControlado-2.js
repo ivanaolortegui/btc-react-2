@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import validator from 'validator'
+
 
 const InputHijo = (props) => {
     const actualizar = (event) => {
@@ -20,13 +22,17 @@ const InputCpntrolado2 = () => {
         name: '',
         email: ''
     })
+    const { name, email } = formState;
     const actualizar = (inputName, text) => {
+        if(!validator.isEmail(email)){
+            console.log('no es valido');
+        }
         setForm({
             ...formState,
             [inputName]: text
         })
     }
-    const { name, email } = formState;
+    
     return (
         <div>
             <h4>Input No Controla propagación de datos</h4>

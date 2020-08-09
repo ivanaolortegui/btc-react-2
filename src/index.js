@@ -14,6 +14,7 @@ import InputNoControladosRef from "./components/formulario/InputNoControladosRef
 import InputNoControladoForm from "./components/formulario/InputNoControladoForm";
 import InputControlado from "./components/formulario/InputControlado";
 import InputCpntrolado2 from "./components/formulario/InputControlado-2";
+import ApiContext from "./components/api-context/ApiContext";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -33,6 +34,8 @@ ReactDOM.render(
    <InputControlado/>
 
    <InputCpntrolado2/>
+
+   <ApiContext/>
   </React.StrictMode>,
   document.getElementById("root")
 );
