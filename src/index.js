@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import Portal from "./components/Portales";
 import UseState from "./components/hooks/UseState-1";
 import UseState2 from "./components/hooks/UseState-2";
-import  Desmontado from "./components/hooks/CicloDeVida";
+import Desmontado from "./components/hooks/CicloDeVida";
 import ParentComponents from "./components/comunicacion/ParentComponents";
 import RenderProp from "./components/comunicacion/RenderProp";
 
@@ -15,19 +15,23 @@ import InputNoControladoForm from "./components/formulario/InputNoControladoForm
 import InputControlado from "./components/formulario/InputControlado";
 import InputCpntrolado2 from "./components/formulario/InputControlado-2";
 import ApiContext from "./components/api-context/ApiContext";
+import UseState3 from "./components/hooks/UseState3";
+import Padre from "./components/comunicacion/RederProps";
+import Form from "./components/formulario/Form";
+import ApiContextForm from "./components/api-context/ApiContextForm";
 
 ReactDOM.render(
   <React.StrictMode>
- {/*   <Portal />
+    {/*   <Portal />
    <UseState/>
 
    <UseState2 />
 
    < Desmontado/> */}
 
-  {/*  <ParentComponents/>
+    {/*  <ParentComponents/>
    <RenderProp/> */}
-   <Hoc/>
+    {/*  <Hoc/>
    <InputNoControladosRef/>
 
    <InputNoControladoForm/>
@@ -35,7 +39,11 @@ ReactDOM.render(
 
    <InputCpntrolado2/>
 
-   <ApiContext/>
+   <ApiContext/> */}
+    {/*  <UseState3/> */}
+    {/*  <Padre/> */}
+   {/*  <Form /> */}
+   <ApiContextForm/>
   </React.StrictMode>,
   document.getElementById("root")
 );
